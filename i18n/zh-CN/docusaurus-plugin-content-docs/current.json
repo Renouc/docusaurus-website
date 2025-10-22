@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "下一版本",
+    "description": "版本 current 的标签"
+  },
+  "sidebar.tutorialSidebar.category.Tutorial - Basics": {
+    "message": "教程 - 基础",
+    "description": "边栏 tutorialSidebar 中分类\"教程 - 基础\"的标签"
+  },
+  "sidebar.tutorialSidebar.category.Tutorial - Basics.link.generated-index.description": {
+    "message": "5 分钟学习最重要的 Docusaurus 概念。",
+    "description": "边栏 tutorialSidebar 中分类\"教程 - 基础\"的生成索引页面描述"
+  },
+  "sidebar.tutorialSidebar.category.Tutorial - Extras": {
+    "message": "教程 - 进阶",
+    "description": "边栏 tutorialSidebar 中分类\"教程 - 进阶\"的标签"
+  }
+}

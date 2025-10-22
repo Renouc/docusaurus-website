@@ -1,0 +1,42 @@
+{
+  "link.title.Docs": {
+    "message": "文档",
+    "description": "页脚中标题为\"文档\"的链接栏标题"
+  },
+  "link.title.Community": {
+    "message": "社区",
+    "description": "页脚中标题为\"社区\"的链接栏标题"
+  },
+  "link.title.More": {
+    "message": "更多",
+    "description": "页脚中标题为\"更多\"的链接栏标题"
+  },
+  "link.item.label.Tutorial": {
+    "message": "教程",
+    "description": "页脚中标签为\"教程\"的链接标签，链接到 /docs/intro"
+  },
+  "link.item.label.Stack Overflow": {
+    "message": "Stack Overflow",
+    "description": "页脚中标签为\"Stack Overflow\"的链接标签，链接到 https://stackoverflow.com/questions/tagged/docusaurus"
+  },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "页脚中标签为\"Discord\"的链接标签，链接到 https://discordapp.com/invite/docusaurus"
+  },
+  "link.item.label.X": {
+    "message": "X",
+    "description": "页脚中标签为\"X\"的链接标签，链接到 https://x.com/docusaurus"
+  },
+  "link.item.label.Blog": {
+    "message": "博客",
+    "description": "页脚中标签为\"博客\"的链接标签，链接到 /blog"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "页脚中标签为\"GitHub\"的链接标签，链接到 https://github.com/facebook/docusaurus"
+  },
+  "copyright": {
+    "message": "版权所有 © 2025 My Project, Inc. 由 Docusaurus 驱动。",
+    "description": "页脚版权"
+  }
+}

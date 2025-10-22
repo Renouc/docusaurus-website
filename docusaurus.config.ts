@@ -38,9 +38,11 @@ const config: Config = {
     localeConfigs: {
       "en-US": {
         label: "English",
+        htmlLang: "en-US",
       },
       "zh-CN": {
         label: "简体中文",
+        htmlLang: "zh-CN",
       },
     },
   },
