@@ -35,6 +35,14 @@ const config: Config = {
   i18n: {
     defaultLocale: "en-US",
     locales: ["en-US", "zh-CN"],
+    localeConfigs: {
+      "en-US": {
+        label: "English",
+      },
+      "zh-CN": {
+        label: "简体中文",
+      },
+    },
   },
 
   presets: [
