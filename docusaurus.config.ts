@@ -1,6 +1,6 @@
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
-
+import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
 import themeConfig from "./themeConfig";
 
 // 这在 Node.js 中运行 - 不要在这里使用客户端代码（浏览器 API、JSX...）
@@ -53,8 +53,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          // 请将此改为你的仓库。
-          // 移除此项以删除"编辑此页面"链接。
+          docItemComponent: "@theme/ApiItem", // 从 docusaurus-theme-openapi 派生的
         },
         blog: {
           showReadingTime: true,
@@ -72,11 +71,38 @@ const config: Config = {
         theme: {
           customCss: "./src/css/custom.css",
         },
+        gtag: {
+          trackingID: "GTM-THVM29S",
+          anonymizeIP: false,
+        },
       } satisfies Preset.Options,
     ],
   ],
 
+  plugins: [
+    [
+      "docusaurus-plugin-openapi-docs",
+      {
+        id: "api", // 插件 id
+        docsPluginId: "classic", // 配置为 preset-classic
+        config: {
+          tags: {
+            specPath: "api/tags.yaml",
+            outputDir: "docs/api/tags",
+            sidebarOptions: {
+              groupPathsBy: "tag",
+              categoryLinkSource: "info",
+            },
+            hideSendButton: true,
+            showSchemas: true,
+          } satisfies OpenApiPlugin.Options,
+        },
+      },
+    ],
+  ],
+
   themeConfig,
+  themes: ["docusaurus-theme-openapi-docs"], // 导出主题组件
 };
 
 export default config;
