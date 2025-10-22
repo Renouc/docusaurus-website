@@ -16,7 +16,7 @@ const config: Config = {
   },
 
   // 在这里设置你的站点的生产 URL
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://590be09a.docusaurus-website-73u.pages.dev",
   // 设置你的站点所在的 /<baseUrl>/ 路径名
   // 对于 GitHub pages 部署，通常是 '/<projectName>/'
   baseUrl: "/",
@@ -55,8 +55,6 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // 请将此改为你的仓库。
           // 移除此项以删除"编辑此页面"链接。
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
           showReadingTime: true,
@@ -66,8 +64,6 @@ const config: Config = {
           },
           // 请将此改为你的仓库。
           // 移除此项以删除"编辑此页面"链接。
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
           // 用于强制执行博客最佳实践的有用选项
           onInlineTags: "warn",
           onInlineAuthors: "warn",

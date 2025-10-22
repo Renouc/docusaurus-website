@@ -1,50 +1,36 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+import type { ReactNode } from "react";
+import clsx from "clsx";
+import Heading from "@theme/Heading";
+import styles from "./styles.module.css";
+import { translate } from "@docusaurus/Translate";
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  Svg: React.ComponentType<React.ComponentProps<"svg">>;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
+    title: translate({ id: "home.feature.easyToUse.title", message: "Easy to Use" }),
+    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+    description: translate({ id: "home.feature.easyToUse.description", description: "The description of the easy to use feature", message: "Docusaurus was designed from the ground up to be easily installed and used to get your website up and running quickly." }),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
+    title: translate({ id: "home.feature.focusOnWhatMatters.title", message: "Focus on What Matters" }),
+    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+    description: <p dangerouslySetInnerHTML={{ __html: translate({ id: "home.feature.focusOnWhatMatters.description", description: "The description of the focus on what matters feature", message: "Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go ahead and move your docs into the <code>docs</code> directory." }) }}></p>
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
+    title: translate({ id: "home.feature.poweredByReact.title", message: "Powered by React" }),
+    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    description: translate({ id: "home.feature.poweredByReact.description", description: "The description of the powered by react feature", message: "Extend or customize your website layout by reusing React. Docusaurus can be extended while reusing the same header and footer." }),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx("col col--4")}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>

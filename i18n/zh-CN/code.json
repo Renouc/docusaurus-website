@@ -321,5 +321,45 @@
   "theme.tags.tagsPageTitle": {
     "message": "标签",
     "description": "标签列表页面的标题"
+  },
+  "home.description": {
+    "message": "描述将进入 <head /> 中的元标签",
+    "description": "主页的描述"
+  },
+  "home.title": {
+    "message": "欢迎来到 {title}",
+    "description": "主页的标题"
+  },
+  "home.subtitle": {
+    "message": "欢迎来到 {tagline}",
+    "description": "主页的子标题"
+  },
+  "home.button.label": {
+    "message": "教程 - 5分钟 ⏱️",
+    "description": "主页的按钮标签"
+  },
+  "home.feature.easyToUse.title": {
+    "message": "易于使用",
+    "description": "易用性功能的标题"
+  },
+  "home.feature.easyToUse.description": {
+    "message": "Docusaurus 被设计为易于安装和使用，以快速使您的网站上线。",
+    "description": "易用性功能的描述"
+  },
+  "home.feature.focusOnWhatMatters.title": {
+    "message": "专注于要点",
+    "description": "关注要点的功能的标题"
+  },
+  "home.feature.focusOnWhatMatters.description": {
+    "message": "Docusaurus 让您专注于文档，我们会处理繁琐的工作。请继续将您的文档移动到 <code>docs</code> 目录。",
+    "description": "关注要点的功能的描述"
+  },
+  "home.feature.poweredByReact.title": {
+    "message": "基于 React",
+    "description": "基于 React 的功能的标题"
+  },
+  "home.feature.poweredByReact.description": {
+    "message": "通过重用 React，扩展或自定义您的网站布局。Docusaurus 可以在重用相同标题和页脚的同时进行扩展。",
+    "description": "基于 React 的功能的描述"
   }
 }
