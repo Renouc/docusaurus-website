@@ -6,8 +6,9 @@ import themeConfig from "./themeConfig";
 // 这在 Node.js 中运行 - 不要在这里使用客户端代码（浏览器 API、JSX...）
 
 const config: Config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
+  title: "Shoplazza Developer Documentation",
+  tagline:
+    "Learn how to build an app and theme. Whether you're just getting started, deep in the development process, or ready to distribute and monetize your work, Shoplazza's docs, dev tools and frameworks make building easy and efficient.",
   favicon: "img/logo.svg",
 
   // 未来的标志，参见 https://docusaurus.io/docs/api/docusaurus-config#future

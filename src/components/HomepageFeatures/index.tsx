@@ -6,37 +6,57 @@ import { translate } from "@docusaurus/Translate";
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<"svg">>;
-  description: ReactNode;
+  description: string;
+  buttonText: string;
+  imageUrl: string;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: translate({ id: "home.feature.easyToUse.title", message: "Easy to Use" }),
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
-    description: translate({ id: "home.feature.easyToUse.description", description: "The description of the easy to use feature", message: "Docusaurus was designed from the ground up to be easily installed and used to get your website up and running quickly." }),
+    title: translate({ 
+      id: "home.feature.apps.title", 
+      message: "Apps" 
+    }),
+    description: translate({ 
+      id: "home.feature.apps.description", 
+      message: "Extend Shoplazza's core functionality with apps that integrate into Shoplazza's admin, online store, checkout and more." 
+    }),
+    buttonText: translate({ 
+      id: "home.feature.apps.button", 
+      message: "Build your app" 
+    }),
+    imageUrl: "https://cdn.shoplazza.com/2bfea269d420110bc0bbdb86d4c80158.webp",
   },
   {
-    title: translate({ id: "home.feature.focusOnWhatMatters.title", message: "Focus on What Matters" }),
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
-    description: <p dangerouslySetInnerHTML={{ __html: translate({ id: "home.feature.focusOnWhatMatters.description", description: "The description of the focus on what matters feature", message: "Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go ahead and move your docs into the <code>docs</code> directory." }) }}></p>
-  },
-  {
-    title: translate({ id: "home.feature.poweredByReact.title", message: "Powered by React" }),
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
-    description: translate({ id: "home.feature.poweredByReact.description", description: "The description of the powered by react feature", message: "Extend or customize your website layout by reusing React. Docusaurus can be extended while reusing the same header and footer." }),
+    title: translate({ 
+      id: "home.feature.themes.title", 
+      message: "Themes" 
+    }),
+    description: translate({ 
+      id: "home.feature.themes.description", 
+      message: "Help merchants express their unique brand in their storefront by building a custom theme." 
+    }),
+    buttonText: translate({ 
+      id: "home.feature.themes.button", 
+      message: "Build your theme" 
+    }),
+    imageUrl: "https://cdn.shoplazza.com/2af99a8daef29261d3b5dfde1ea456bc.png",
   },
 ];
 
-function Feature({ title, Svg, description }: FeatureItem) {
+function Feature({ title, description, buttonText, imageUrl }: FeatureItem) {
   return (
-    <div className={clsx("col col--4")}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+    <div className={clsx("col col--6", styles.featureColumn)}>
+      <div className={styles.featureCard}>
+        <div className={styles.featureContent}>
+          <Heading as="h3" className={styles.featureTitle}>{title}</Heading>
+          <p className={styles.featureDescription}>{description}</p>
+          <button className={styles.featureButton}>{buttonText} →</button>
+        </div>
+        <div 
+          className={styles.featureImageContainer}
+          style={{ backgroundImage: `url(${imageUrl})` }}
+        />
       </div>
     </div>
   );

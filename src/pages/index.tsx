@@ -12,27 +12,22 @@ import styles from "./index.module.css";
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
+    <header className={clsx(styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          <Translate
-            id="home.title"
-            description="The title of the home page"
-            values={{ title: siteConfig.title }}
-          >
-            {`Hello from {title}`}
+          <Translate id="home.title" description="The title of the home page">
+            {siteConfig.title}
           </Translate>
         </Heading>
-        <p className="hero__subtitle">
+        <p className={clsx("hero__subtitle", styles.subtitle)}>
           <Translate
             id="home.subtitle"
             description="The subtitle of the home page"
-            values={{ tagline: siteConfig.tagline }}
           >
-            {`Welcome to {tagline}`}
+            {siteConfig.tagline}
           </Translate>
         </p>
-        <div className={styles.buttons}>
+        {/* <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro"
@@ -44,7 +39,7 @@ function HomepageHeader() {
               Docusaurus Tutorial - 5min ⏱️
             </Translate>
           </Link>
-        </div>
+        </div> */}
       </div>
     </header>
   );
