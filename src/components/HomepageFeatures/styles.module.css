@@ -105,11 +105,14 @@ html[data-theme='dark'] {
   transition: all 0.2s ease;
   display: inline-block;
   margin-top: auto;
+  text-decoration: none;
+  text-align: center;
 }
 
 .featureButton:hover {
   background: var(--feature-btn-hover-bg);
   border-color: var(--feature-btn-hover-border);
+  text-decoration: none;
 }
 
 .featureImageContainer {

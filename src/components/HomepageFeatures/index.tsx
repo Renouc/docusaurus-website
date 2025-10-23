@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import clsx from "clsx";
 import Heading from "@theme/Heading";
+import Link from "@docusaurus/Link";
 import styles from "./styles.module.css";
 import { translate } from "@docusaurus/Translate";
 
@@ -9,6 +10,7 @@ type FeatureItem = {
   description: string;
   buttonText: string;
   imageUrl: string;
+  link: string;
 };
 
 const FeatureList: FeatureItem[] = [
@@ -26,6 +28,7 @@ const FeatureList: FeatureItem[] = [
       message: "Build your app" 
     }),
     imageUrl: "https://cdn.shoplazza.com/2bfea269d420110bc0bbdb86d4c80158.webp",
+    link: "/docs/apps/getting-started",
   },
   {
     title: translate({ 
@@ -41,17 +44,18 @@ const FeatureList: FeatureItem[] = [
       message: "Build your theme" 
     }),
     imageUrl: "https://cdn.shoplazza.com/2af99a8daef29261d3b5dfde1ea456bc.png",
+    link: "/docs/themes/getting-started",
   },
 ];
 
-function Feature({ title, description, buttonText, imageUrl }: FeatureItem) {
+function Feature({ title, description, buttonText, imageUrl, link }: FeatureItem) {
   return (
     <div className={clsx("col col--6", styles.featureColumn)}>
       <div className={styles.featureCard}>
         <div className={styles.featureContent}>
           <Heading as="h3" className={styles.featureTitle}>{title}</Heading>
           <p className={styles.featureDescription}>{description}</p>
-          <button className={styles.featureButton}>{buttonText} →</button>
+          <Link to={link} className={styles.featureButton}>{buttonText} →</Link>
         </div>
         <div 
           className={styles.featureImageContainer}
