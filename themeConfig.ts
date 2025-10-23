@@ -16,6 +16,18 @@ const navbar: Preset.ThemeConfig["navbar"] = {
     },
     {
       type: "docSidebar",
+      sidebarId: "appsSidebar",
+      position: "left",
+      label: "Apps",
+    },
+    {
+      type: "docSidebar",
+      sidebarId: "themesSidebar",
+      position: "left",
+      label: "Themes",
+    },
+    {
+      type: "docSidebar",
       sidebarId: "apiSidebar",
       position: "left",
       label: "API",
