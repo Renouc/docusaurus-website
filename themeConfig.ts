@@ -114,4 +114,5 @@ export default {
   footer,
   algolia,
   prism,
+  metadata,
 } satisfies Preset.ThemeConfig;
