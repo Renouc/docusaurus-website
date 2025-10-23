@@ -16,6 +16,10 @@ const navbar: Preset.ThemeConfig["navbar"] = {
     },
     { to: "/blog", label: "Blog", position: "left" },
     {
+      type: "docsVersionDropdown",
+      position: "right",
+    },
+    {
       type: "localeDropdown",
       position: "right",
     },
