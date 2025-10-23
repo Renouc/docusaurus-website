@@ -21,8 +21,8 @@
   --feature-btn-hover-border: #d0d0d0;
 }
 
-/* 暗色模式颜色 */
-[data-theme='dark'] {
+
+html[data-theme='dark'] {
   --feature-apps-bg: #1e3a52;
   --feature-themes-bg: #4a2a5a;
   --feature-apps-title: #7eb3ff;
