@@ -1,0 +1,87 @@
+---
+id: all-of-with-nested-all-of
+title: "allOf 与嵌套 allOf"
+description: "一个演示嵌套 allOf 的示例。"
+sidebar_label: "allOf 与嵌套 allOf"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVcFu2zAM/RWBZzVJc9QtwIZhl7VAt11iA1YcJlYnU5okZw0M/fsgua7TNAUyYKdhuhimyPdo8T25hyD3HsQapNZ3Oyg5bNHXTtmgDIGAFTF8kq3VyLbYGvLByaBozwh9wC3LZeyXCo2i4WVWUEEPdYOtFAVVVXWUrS4o74mCGLth4WhRMLN5xDqkCGPWGYsuKPRiCDBmuoDu3hn7EmEXCtOaoMd1iWJcF6jGpYgGyts3WyO3D07R/m9yLd/loq7doPuTIwsNurt3z23svaqqgoCDQ28NefQgelguFunxevoPXV2j97tOszEZONSGAlJI6dJarWqZ0uePPtX04PPs827WlFj3kBoAAUP/wGFqPuW9jDq9nKdeCzIN7wRl+GSIMfKr65cn9cMIUn15DcbrAVzsI+HEyKHF0JgtCNhjxpGhAQFzqbXZ3QzmAg6KdibDqKATzirb7bt0Kp+5Z6v7z3Du2Q8vRkXPDtIp0/lnow6zYbVpN4oGiBlwOKDzQ+3tbDFbQORgjQ+tzAMl2Sbuyersy4n5z+n7SR//b49/+PZ4VnbApzC3WipKqumcTgoY1Jx/KpOaSw6N8SHF+34jPX5zOsYU/tmhO4JYlxySXOUmaX1dRg4Nyi267P4feEyKqmu0yTAHqbusyvMbKJYn5vr08SvE+BsA0TYm
+sidebar_class_name: "get api-method"
+info_path: docs/api/tags/allof-variations-api
+custom_edit_url: null
+hide_send_button: true
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"allOf 与嵌套 allOf"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/allof-nested"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+一个演示嵌套 allOf 的示例。
+
+模式：
+```yaml
+allOf:
+  - type: object
+    properties:
+      outerProp:
+        type: object
+        allOf:
+          - type: object
+            properties:
+              innerProp1:
+                type: string
+          - type: object
+            properties:
+              innerProp2:
+                type: number
+  - type: object
+    properties:
+      otherOuterProp:
+        type: string
+```
+
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"正文"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"成功响应","content":{"application/json":{"schema":{"allOf":[{"type":"object","properties":{"outerProp":{"type":"object","allOf":[{"type":"object","properties":{"innerProp1":{"type":"string"}}},{"type":"object","properties":{"innerProp2":{"type":"number"}}}]}}},{"type":"object","properties":{"otherOuterProp":{"type":"string"}}}]}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
