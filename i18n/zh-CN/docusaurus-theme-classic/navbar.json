@@ -18,5 +18,13 @@
   "item.label.API": {
     "message": "API",
     "description": "Navbar item with label API"
+  },
+  "item.label.Apps": {
+    "message": "应用",
+    "description": "Navbar item with label Apps"
+  },
+  "item.label.Themes": {
+    "message": "主题",
+    "description": "Navbar item with label Themes"
   }
 }

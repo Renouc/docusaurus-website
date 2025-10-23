@@ -491,27 +491,21 @@
     "description": "The paragraph for fetching new search results"
   },
   "home.feature.apps.title": {
-    "message": "应用",
-    "description": "The title for the Apps feature"
+    "message": "应用"
   },
   "home.feature.apps.description": {
-    "message": "通过与 Shoplazza 的管理后台、在线商店、结账页面等集成的应用扩展 Shoplazza 的核心功能。",
-    "description": "The description for the Apps feature"
+    "message": "通过与 Shoplazza 的管理后台、在线商店、结账页面等集成的应用扩展 Shoplazza 的核心功能。"
   },
   "home.feature.apps.button": {
-    "message": "构建你的应用",
-    "description": "The button text for the Apps feature"
+    "message": "构建你的应用"
   },
   "home.feature.themes.title": {
-    "message": "主题",
-    "description": "The title for the Themes feature"
+    "message": "主题"
   },
   "home.feature.themes.description": {
-    "message": "通过构建自定义主题帮助商户在店面中表达他们独特的品牌。",
-    "description": "The description for the Themes feature"
+    "message": "通过构建自定义主题帮助商户在店面中表达他们独特的品牌。"
   },
   "home.feature.themes.button": {
-    "message": "构建你的主题",
-    "description": "The button text for the Themes feature"
+    "message": "构建你的主题"
   }
 }
