@@ -55,19 +55,7 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           docItemComponent: "@theme/ApiItem", // 从 docusaurus-theme-openapi 派生的
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ["rss", "atom"],
-            xslt: true,
-          },
-          // 请将此改为你的仓库。
-          // 移除此项以删除"编辑此页面"链接。
-          // 用于强制执行博客最佳实践的有用选项
-          onInlineTags: "warn",
-          onInlineAuthors: "warn",
-          onUntruncatedBlogPosts: "warn",
-        },
+        blog: false,
         theme: {
           customCss: "./src/css/custom.css",
         },

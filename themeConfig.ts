@@ -14,7 +14,6 @@ const navbar: Preset.ThemeConfig["navbar"] = {
       position: "left",
       label: "Tutorial",
     },
-    { to: "/blog", label: "Blog", position: "left" },
     {
       type: "docsVersionDropdown",
       position: "right",
@@ -31,6 +30,7 @@ const navbar: Preset.ThemeConfig["navbar"] = {
     // Algolia search
     {
       type: "search",
+      position: "right",
     },
   ],
 };
