@@ -15,6 +15,12 @@ const navbar: Preset.ThemeConfig["navbar"] = {
       label: "Tutorial",
     },
     {
+      type: "docSidebar",
+      sidebarId: "apiSidebar",
+      position: "left",
+      label: "API",
+    },
+    {
       type: "docsVersionDropdown",
       position: "right",
     },

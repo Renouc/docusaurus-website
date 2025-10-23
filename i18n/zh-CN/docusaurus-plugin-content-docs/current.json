@@ -1,18 +1,42 @@
 {
   "version.label": {
     "message": "Next",
-    "description": "版本 current 的标签"
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Tutorial": {
+    "message": "教程",
+    "description": "边栏 tutorialSidebar 中顶级分类\"Tutorial\"的标签"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Basics": {
     "message": "教程 - 基础",
-    "description": "边栏 tutorialSidebar 中分类\"教程 - 基础\"的标签"
+    "description": "The label for category Tutorial - Basics in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Basics.link.generated-index.description": {
     "message": "5 分钟学习最重要的 Docusaurus 概念。",
-    "description": "边栏 tutorialSidebar 中分类\"教程 - 基础\"的生成索引页面描述"
+    "description": "The generated-index page description for category Tutorial - Basics in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Extras": {
     "message": "教程 - 进阶",
-    "description": "边栏 tutorialSidebar 中分类\"教程 - 进阶\"的标签"
+    "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
+  },
+  "sidebar.apiSidebar.category.API": {
+    "message": "API",
+    "description": "边栏 apiSidebar 中顶级分类\"API\"的标签"
+  },
+  "sidebar.apiSidebar.category.allOf": {
+    "message": "allOf",
+    "description": "边栏 apiSidebar 中分类\"allOf\"的标签"
+  },
+  "sidebar.apiSidebar.category.Schemas": {
+    "message": "Schemas",
+    "description": "边栏 apiSidebar 中分类\"Schemas\"的标签"
+  },
+  "sidebar.apiSidebar.category.tags": {
+    "message": "tags",
+    "description": "The label for category tags in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.schemas": {
+    "message": "schemas",
+    "description": "The label for category schemas in sidebar apiSidebar"
   }
 }

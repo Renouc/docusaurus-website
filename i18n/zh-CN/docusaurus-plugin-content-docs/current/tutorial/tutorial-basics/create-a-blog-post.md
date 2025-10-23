@@ -2,9 +2,9 @@
 sidebar_position: 3
 ---
 
-# 创建博文
+# 创建博客文章
 
-Docusaurus 为每篇博文创建一个 **页面**，同时也创建了 **博客索引页面**、**标签系统**、**RSS** 源等。
+Docusaurus 为每篇博客文章创建**一个页面**，同时也创建**博客索引页面**、**标签系统**、**RSS** 源等。
 
 ## 创建你的第一篇文章
 
@@ -26,9 +26,9 @@ authors:
 tags: [greetings]
 ---
 
-恭喜，你发布了你的第一篇文章！
+恭喜，你已经发布了你的第一篇文章！
 
-随意尽情地编辑这篇文章。
+随意操作并尽可能多地编辑这篇文章。
 ```
 
-新的博文现在可以在 [http://localhost:3000/blog/greetings](http://localhost:3000/blog/greetings) 查看。
+现在可以在 [http://localhost:3000/blog/greetings](http://localhost:3000/blog/greetings) 访问新博客文章。

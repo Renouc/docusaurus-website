@@ -1,42 +1,42 @@
 {
   "link.title.Docs": {
     "message": "文档",
-    "description": "页脚中标题为\"文档\"的链接栏标题"
+    "description": "The title of the footer links column with title=Docs in the footer"
   },
   "link.title.Community": {
     "message": "社区",
-    "description": "页脚中标题为\"社区\"的链接栏标题"
+    "description": "The title of the footer links column with title=Community in the footer"
   },
   "link.title.More": {
     "message": "更多",
-    "description": "页脚中标题为\"更多\"的链接栏标题"
+    "description": "The title of the footer links column with title=More in the footer"
   },
   "link.item.label.Tutorial": {
     "message": "教程",
-    "description": "页脚中标签为\"教程\"的链接标签，链接到 /docs/intro"
+    "description": "The label of footer link with label=Tutorial linking to /docs/intro"
   },
   "link.item.label.Stack Overflow": {
     "message": "Stack Overflow",
-    "description": "页脚中标签为\"Stack Overflow\"的链接标签，链接到 https://stackoverflow.com/questions/tagged/docusaurus"
+    "description": "The label of footer link with label=Stack Overflow linking to https://stackoverflow.com/questions/tagged/docusaurus"
   },
   "link.item.label.Discord": {
     "message": "Discord",
-    "description": "页脚中标签为\"Discord\"的链接标签，链接到 https://discordapp.com/invite/docusaurus"
+    "description": "The label of footer link with label=Discord linking to https://discordapp.com/invite/docusaurus"
   },
   "link.item.label.X": {
     "message": "X",
-    "description": "页脚中标签为\"X\"的链接标签，链接到 https://x.com/docusaurus"
+    "description": "The label of footer link with label=X linking to https://x.com/docusaurus"
   },
   "link.item.label.Blog": {
     "message": "博客",
-    "description": "页脚中标签为\"博客\"的链接标签，链接到 /blog"
+    "description": "The label of footer link with label=Blog linking to /blog"
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
-    "description": "页脚中标签为\"GitHub\"的链接标签，链接到 https://github.com/facebook/docusaurus"
+    "description": "The label of footer link with label=GitHub linking to https://github.com/facebook/docusaurus"
   },
   "copyright": {
     "message": "版权所有 © 2025 My Project, Inc. 由 Docusaurus 驱动。",
-    "description": "页脚版权"
+    "description": "The footer copyright"
   }
 }

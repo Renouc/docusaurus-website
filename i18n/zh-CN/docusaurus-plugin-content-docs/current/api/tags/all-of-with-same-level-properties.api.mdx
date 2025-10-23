@@ -48,7 +48,7 @@ allOf:
         type: string
 properties:
   parentProp1:
-    type: string
+    type: integer
   parentProp2:
     type: string
 ```
@@ -61,7 +61,7 @@ properties:
 </ParamsDetails>
 
 <RequestSchema
-  title={"正文"}
+  title={"Body"}
   body={undefined}
 >
   
@@ -70,7 +70,7 @@ properties:
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"成功响应","content":{"application/json":{"schema":{"allOf":[{"type":"object","properties":{"allOfProp1":{"type":"string"},"allOfProp2":{"type":"string"}}}],"properties":{"parentProp1":{"type":"string"},"parentProp2":{"type":"string"}}}}}}}}
+  responses={{"200":{"description":"Successful response","content":{"application/json":{"schema":{"type":"object","allOf":[{"type":"object","properties":{"allOfProp1":{"type":"string"},"allOfProp2":{"type":"string"}}}],"properties":{"parentProp1":{"type":"integer"},"parentProp2":{"type":"string"}}}}}}}}
 >
   
 </StatusCodes>

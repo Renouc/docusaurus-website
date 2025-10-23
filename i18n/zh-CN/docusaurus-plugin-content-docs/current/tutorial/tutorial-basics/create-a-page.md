@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # 创建页面
 
-添加 **Markdown 或 React** 文件到 `src/pages` 来创建 **独立页面**：
+向 `src/pages` 添加 **Markdown 或 React** 文件来创建**独立页面**：
 
 - `src/pages/index.js` → `localhost:3000/`
 - `src/pages/foo.md` → `localhost:3000/foo`
@@ -28,7 +28,7 @@ export default function MyReactPage() {
 }
 ```
 
-新页面现在可以在 [http://localhost:3000/my-react-page](http://localhost:3000/my-react-page) 查看。
+现在可以在 [http://localhost:3000/my-react-page](http://localhost:3000/my-react-page) 访问新页面。
 
 ## 创建你的第一个 Markdown 页面
 
@@ -40,4 +40,4 @@ export default function MyReactPage() {
 这是一个 Markdown 页面
 ```
 
-新页面现在可以在 [http://localhost:3000/my-markdown-page](http://localhost:3000/my-markdown-page) 查看。
+现在可以在 [http://localhost:3000/my-markdown-page](http://localhost:3000/my-markdown-page) 访问新页面。

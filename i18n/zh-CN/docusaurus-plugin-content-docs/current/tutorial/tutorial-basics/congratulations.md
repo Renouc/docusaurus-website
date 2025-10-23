@@ -4,15 +4,15 @@ sidebar_position: 6
 
 # 恭喜！
 
-你已经学到了 **Docusaurus 的基础知识** 并对 **初始模板** 进行了一些修改。
+你刚刚学习了 **Docusaurus 的基础知识**并对**初始模板**进行了一些更改。
 
-Docusaurus **还有很多更多功能**！
+Docusaurus **还有更多功能**！
 
-有 **还剩 5 分钟时间** 吗？看一下 **[版本管理](../tutorial-extras/manage-docs-versions.md)** 和 **[国际化](../tutorial-extras/translate-your-site.md)**。
+还有**5 分钟时间**吗？看看 **[版本管理](../tutorial-extras/manage-docs-versions.md)** 和 **[国际化](../tutorial-extras/translate-your-site.md)**。
 
-有什么 **不清楚** 或 **有 bug** 的地方吗？[请报告给我们！](https://github.com/facebook/docusaurus/discussions/4610)
+在本教程中有什么**不清楚**或**有问题**吗？[请报告！](https://github.com/facebook/docusaurus/discussions/4610)
 
-## 下一步是什么？
+## 接下来呢？
 
 - 阅读 [官方文档](https://docusaurus.io/)
 - 使用 [`docusaurus.config.js`](https://docusaurus.io/docs/api/docusaurus-config) 修改你的网站配置

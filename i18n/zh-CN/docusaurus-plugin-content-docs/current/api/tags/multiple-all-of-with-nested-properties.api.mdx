@@ -37,7 +37,7 @@ import Heading from "@theme/Heading";
 
 
 
-模式：
+Schema:
 ```yaml
 allOf:
   - type: object
@@ -64,7 +64,7 @@ allOf:
 </ParamsDetails>
 
 <RequestSchema
-  title={"正文"}
+  title={"Body"}
   body={undefined}
 >
   
@@ -73,7 +73,7 @@ allOf:
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"成功响应","content":{"application/json":{"schema":{"allOf":[{"type":"object","properties":{"outerProp1":{"type":"object","properties":{"innerProp1":{"type":"string"}}}}},{"type":"object","properties":{"outerProp2":{"type":"object","properties":{"innerProp2":{"type":"number"}}}}}]}}}}}}
+  responses={{"200":{"description":"Successful response","content":{"application/json":{"schema":{"allOf":[{"type":"object","properties":{"outerProp1":{"type":"object","properties":{"innerProp1":{"type":"string"}}}}},{"type":"object","properties":{"outerProp2":{"type":"object","properties":{"innerProp2":{"type":"number"}}}}}]}}}}}}
 >
   
 </StatusCodes>

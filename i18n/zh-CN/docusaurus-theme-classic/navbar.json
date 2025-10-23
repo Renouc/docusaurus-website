@@ -1,11 +1,11 @@
 {
   "logo.alt": {
     "message": "我的网站徽标",
-    "description": "导航栏徽标的替代文本"
+    "description": "The alt text of navbar logo"
   },
   "item.label.Tutorial": {
     "message": "教程",
-    "description": "标签为教程的导航栏项"
+    "description": "Navbar item with label Tutorial"
   },
   "item.label.Blog": {
     "message": "博客",
@@ -13,6 +13,10 @@
   },
   "item.label.GitHub": {
     "message": "GitHub",
-    "description": "标签为GitHub的导航栏项"
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.API": {
+    "message": "API",
+    "description": "Navbar item with label API"
   }
 }

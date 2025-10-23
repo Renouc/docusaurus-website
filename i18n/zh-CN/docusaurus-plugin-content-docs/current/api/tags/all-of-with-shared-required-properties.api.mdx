@@ -48,8 +48,9 @@ allOf:
   - type: object
     properties:
       anotherProp:
-        type: number
+        type: string
     required: [anotherProp]
+required: [sharedProp, anotherProp]
 ```
 
 
@@ -60,7 +61,7 @@ allOf:
 </ParamsDetails>
 
 <RequestSchema
-  title={"正文"}
+  title={"Body"}
   body={undefined}
 >
   
@@ -69,7 +70,7 @@ allOf:
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"成功响应","content":{"application/json":{"schema":{"allOf":[{"type":"object","properties":{"sharedProp":{"type":"string"}},"required":["sharedProp"]},{"type":"object","properties":{"anotherProp":{"type":"number"}},"required":["anotherProp"]}]}}}}}}
+  responses={{"200":{"description":"Successful response","content":{"application/json":{"schema":{"type":"object","allOf":[{"type":"object","properties":{"sharedProp":{"type":"string"}},"required":["sharedProp"]},{"type":"object","properties":{"anotherProp":{"type":"string"}},"required":["anotherProp"]}],"required":["sharedProp","anotherProp"]}}}}}}
 >
   
 </StatusCodes>

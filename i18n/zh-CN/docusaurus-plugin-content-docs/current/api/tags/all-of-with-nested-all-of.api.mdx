@@ -1,7 +1,7 @@
 ---
 id: all-of-with-nested-all-of
 title: "allOf 与嵌套 allOf"
-description: "一个演示嵌套 allOf 的示例。"
+description: "演示 allOf 中嵌套 allOf 的示例。"
 sidebar_label: "allOf 与嵌套 allOf"
 hide_title: true
 hide_table_of_contents: true
@@ -37,9 +37,9 @@ import Heading from "@theme/Heading";
 
 
 
-一个演示嵌套 allOf 的示例。
+An example demonstrating nested allOf within allOf.
 
-模式：
+Schema:
 ```yaml
 allOf:
   - type: object
@@ -69,7 +69,7 @@ allOf:
 </ParamsDetails>
 
 <RequestSchema
-  title={"正文"}
+  title={"Body"}
   body={undefined}
 >
   
@@ -78,7 +78,7 @@ allOf:
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"成功响应","content":{"application/json":{"schema":{"allOf":[{"type":"object","properties":{"outerProp":{"type":"object","allOf":[{"type":"object","properties":{"innerProp1":{"type":"string"}}},{"type":"object","properties":{"innerProp2":{"type":"number"}}}]}}},{"type":"object","properties":{"otherOuterProp":{"type":"string"}}}]}}}}}}
+  responses={{"200":{"description":"Successful response","content":{"application/json":{"schema":{"allOf":[{"type":"object","properties":{"outerProp":{"type":"object","allOf":[{"type":"object","properties":{"innerProp1":{"type":"string"}}},{"type":"object","properties":{"innerProp2":{"type":"number"}}}]}}},{"type":"object","properties":{"otherOuterProp":{"type":"string"}}}]}}}}}}
 >
   
 </StatusCodes>

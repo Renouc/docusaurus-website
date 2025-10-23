@@ -1,11 +1,11 @@
 ---
 id: all-of-with-deep-merging
-title: "allOf 与深层合并"
+title: "allOf 与深度合并"
 description: "模式："
-sidebar_label: "allOf 与深层合并"
+sidebar_label: "allOf 与深度合并"
 hide_title: true
 hide_table_of_contents: true
-api: eJztVE1v2zAM/SsCz8pHc9StQIdhh2EF9nFJDERWmFidLGSimnK2wPB/HyStTRp0vQzDLvPFBkW+Rj08eIesDgVqDdu7DHhoJOySTbMx2eFDw0XTYa7Xx2+32pHu38SVRbbwQM5FPEZUI7QOazBEhYgoRU7ZIqgaE2CHG+xTiU0C8UPebWn6sN5jY4OZZ+BGFcrL+8C/6Wb1Yjx/6FlMRbONBQkKKwRMSqBFWyyW/rjQejEGi/eDEYzJIMMFn9JnTdYzOGs3piwfimhGoDKaclsmp9QjcACio9wAJ5wtU0npv/n4986z4RW7VGSZ+5F/gWl3kVg0rV1MZocfchR0oOGBB0bkDBQvtXNjPmG/WYzpwixKs34cCZ7NjvFuWSHzRyRYRSdzev4Nrq99hHzzlpDOSOOpkw0CiiCuq2MKEvrW+QsxBwhET1dqb+XK+hElCDJR7XSbkdc/cFeG7zZ24Q4zi/VOXz+jH88D/L90fL90vH2X8kRfRaet5NkNyrHN1TvnjXTunkdAFynw6jq0m/JzcNHH424DpBGrdSGBr6JZ9tW4mCR3qHaayf1/xxGYzBiNb9KjdUBxwvb5Tc2Hnt28+wTT9BEq7zpk=
+api: eJztVE1v2zAM/SsCz8pHc9StQIdhh2EF9nFJDERWmFidLGminC0w/N8HSmuTBl0vw7DLfLFBke9Rj48eIesDgVqDdu7DHhoJOySTbMw2eFDw0XTYa7Xx2+32pHu38SVRbbwQM5FPEZUI7QOazBEhYgoRU7ZIqgaE2CHG+xTiU0C8UPebWn6s95gY4OZZ+BGFcrL+8C/6Wb3Yjx/6FlMRbONBQkKKwRMSqBFWyyW/rjQejEGi/eDEYzJIMMFn9JnTdYzOGs3piwfimhGoDKaclsmp9QjcACio9wAJ5wtU0npv/n4986z4RW7VGSZ+5F/gWl3kVg0rV1MZocfchR0oOGBB0bkDBQvtXNjPmG/WYzpwixKs34cCZ7NjvFuWSHzRyRYRSdzev4Nrq99hHzzlpDOSOOpkw0CiiCuq2MKEvrW+QsxBwhET1dqb+XK+hElCDJR7XSbkdc/cFeG7zZ24Q4zi/VOXz+jH88D/L90fL90vH2X8kRfRaet5NkNyrHN1TvnjXTunkdAFynw6jq0m/JzcNHH424DpBGrdSGBr6JZ9tW4mCR3qHaayf1/xxGYzBiNb9KjdUBxwvb5Tc2Hnt28+wTT9BEq7zpk=
 sidebar_class_name: "get api-method"
 info_path: docs/api/tags/allof-variations-api
 custom_edit_url: null
@@ -23,7 +23,7 @@ import Heading from "@theme/Heading";
 <Heading
   as={"h1"}
   className={"openapi__heading"}
-  children={"allOf 与深层合并"}
+  children={"allOf 与深度合并"}
 >
 </Heading>
 
@@ -53,7 +53,7 @@ allOf:
         type: object
         properties:
           innerProp2:
-            type: number
+            type: integer
 ```
 
 
@@ -64,7 +64,7 @@ allOf:
 </ParamsDetails>
 
 <RequestSchema
-  title={"正文"}
+  title={"Body"}
   body={undefined}
 >
   
@@ -73,7 +73,7 @@ allOf:
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"成功响应","content":{"application/json":{"schema":{"allOf":[{"type":"object","properties":{"deepProp":{"type":"object","properties":{"innerProp1":{"type":"string"}}}}},{"type":"object","properties":{"deepProp":{"type":"object","properties":{"innerProp2":{"type":"number"}}}}}]}}}}}}
+  responses={{"200":{"description":"Successful response","content":{"application/json":{"schema":{"type":"object","allOf":[{"type":"object","properties":{"deepProp":{"type":"object","properties":{"innerProp1":{"type":"string"}}}}},{"type":"object","properties":{"deepProp":{"type":"object","properties":{"innerProp2":{"type":"integer"}}}}}]}}}}}}
 >
   
 </StatusCodes>

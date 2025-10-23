@@ -4,11 +4,11 @@ sidebar_position: 2
 
 # 翻译你的网站
 
-让我们将 `docs/intro.md` 翻译为法文。
+让我们将 `docs/intro.md` 翻译成法语。
 
 ## 配置 i18n
 
-修改 `docusaurus.config.js` 以添加对 `fr` 语言的支持：
+修改 `docusaurus.config.js` 以添加 `fr` 语言环境支持：
 
 ```js title="docusaurus.config.js"
 export default {
@@ -29,27 +29,27 @@ mkdir -p i18n/fr/docusaurus-plugin-content-docs/current/
 cp docs/intro.md i18n/fr/docusaurus-plugin-content-docs/current/intro.md
 ```
 
-用法文翻译 `i18n/fr/docusaurus-plugin-content-docs/current/intro.md`。
+将 `i18n/fr/docusaurus-plugin-content-docs/current/intro.md` 翻译成法语。
 
-## 启动你的本地化网站
+## 启动本地化网站
 
-启动法文语言版本的网站：
+在法语语言环境上启动你的网站：
 
 ```bash
 npm run start -- --locale fr
 ```
 
-你的本地化网站可以在 [http://localhost:3000/fr/](http://localhost:3000/fr/) 访问，`开始使用` 页面已被翻译。
+你的本地化网站可在 [http://localhost:3000/fr/](http://localhost:3000/fr/) 访问，`入门` 页面已被翻译。
 
 :::caution
 
-在开发中，你一次只能使用一个语言。
+在开发中，你一次只能使用一种语言。
 
 :::
 
 ## 添加语言下拉菜单
 
-为了在语言之间无缝导航，添加一个语言下拉菜单。
+要在多种语言之间无缝导航，请添加语言下拉菜单。
 
 修改 `docusaurus.config.js` 文件：
 
@@ -73,7 +73,7 @@ export default {
 
 ![语言下拉菜单](./img/localeDropdown.png)
 
-## 构建你的本地化网站
+## 构建本地化网站
 
 为特定语言构建你的网站：
 
@@ -81,7 +81,7 @@ export default {
 npm run build -- --locale fr
 ```
 
-或构建你的网站以同时包含所有语言：
+或一次性为所有语言构建你的网站：
 
 ```bash
 npm run build
