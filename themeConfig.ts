@@ -28,6 +28,10 @@ const navbar: Preset.ThemeConfig["navbar"] = {
       label: "GitHub",
       position: "right",
     },
+    // Algolia search
+    {
+      type: "search",
+    },
   ],
 };
 
@@ -77,13 +81,37 @@ const footer: Preset.ThemeConfig["footer"] = {
   copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
 };
 
+const prism: Preset.ThemeConfig["prism"] = {
+  theme: prismThemes.github,
+  darkTheme: prismThemes.dracula,
+};
+
+const metadata: Preset.ThemeConfig["metadata"] = [
+  // <meta name="algolia-site-verification"  content="25EA0A5AEA1FA55D" />
+  {
+    name: "algolia-site-verification",
+    content: "25EA0A5AEA1FA55D",
+  },
+];
+
+const algolia: Preset.ThemeConfig["algolia"] = {
+  // Algolia 提供的应用 ID
+  appId: "578P4PP98L",
+
+  //  公开 API 密钥：提交它没有危险
+  apiKey: "d25cdc6c14981f6f623582b6f3d25fc6",
+
+  indexName: "doc website",
+
+  // 可选：见下文
+  contextualSearch: true,
+};
+
 export default {
   // 替换为你的项目的社交卡片
   image: "img/docusaurus-social-card.jpg",
   navbar,
   footer,
-  prism: {
-    theme: prismThemes.github,
-    darkTheme: prismThemes.dracula,
-  },
+  algolia,
+  prism,
 } satisfies Preset.ThemeConfig;
