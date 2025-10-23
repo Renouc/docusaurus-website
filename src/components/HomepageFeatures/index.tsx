@@ -28,7 +28,7 @@ const FeatureList: FeatureItem[] = [
       message: "Build your app" 
     }),
     imageUrl: "https://cdn.shoplazza.com/2bfea269d420110bc0bbdb86d4c80158.webp",
-    link: "/docs/apps/getting-started",
+    link: "/docs/apps",
   },
   {
     title: translate({ 
@@ -44,7 +44,7 @@ const FeatureList: FeatureItem[] = [
       message: "Build your theme" 
     }),
     imageUrl: "https://cdn.shoplazza.com/2af99a8daef29261d3b5dfde1ea456bc.png",
-    link: "/docs/themes/getting-started",
+    link: "/docs/themes",
   },
 ];
 

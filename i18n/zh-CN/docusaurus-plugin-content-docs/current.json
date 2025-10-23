@@ -19,6 +19,14 @@
     "message": "教程 - 进阶",
     "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
   },
+  "sidebar.appsSidebar.category.Apps": {
+    "message": "应用",
+    "description": "边栏 appsSidebar 中顶级分类\"Apps\"的标签"
+  },
+  "sidebar.themesSidebar.category.Themes": {
+    "message": "主题",
+    "description": "边栏 themesSidebar 中顶级分类\"Themes\"的标签"
+  },
   "sidebar.apiSidebar.category.API": {
     "message": "API",
     "description": "边栏 apiSidebar 中顶级分类\"API\"的标签"

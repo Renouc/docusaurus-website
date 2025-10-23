@@ -1,5 +1,8 @@
 {
   "label": "Apps",
   "position": 3,
-  "collapsed": false
+  "collapsed": false,
+  "link": {
+    "type": "generated-index"
+  }
 }

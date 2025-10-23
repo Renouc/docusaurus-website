@@ -1,5 +1,8 @@
 {
   "label": "Themes",
   "position": 4,
-  "collapsed": false
+  "collapsed": false,
+  "link": {
+    "type": "generated-index"
+  }
 }
