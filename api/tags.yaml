@@ -32,7 +32,7 @@ paths:
                     type: number
         ```
       responses:
-        "200":
+        '200':
           description: Successful response
           content:
             application/json:
@@ -74,7 +74,7 @@ paths:
             required: [anotherProp]
         ```
       responses:
-        "200":
+        '200':
           description: Successful response
           content:
             application/json:
@@ -116,7 +116,7 @@ paths:
                     type: number
         ```
       responses:
-        "200":
+        '200':
           description: Successful response
           content:
             application/json:
@@ -159,7 +159,7 @@ paths:
             type: string
         ```
       responses:
-        "200":
+        '200':
           description: Successful response
           content:
             application/json:
@@ -234,14 +234,14 @@ paths:
             - $ref: '#/components/schemas/AdditionalBookInfo'
         ```
       responses:
-        "200":
+        '200':
           description: A list of books
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: "#/components/schemas/Book"
+                  $ref: '#/components/schemas/Book'
 
   /allof-with-properties-in-array-item:
     get:
@@ -304,14 +304,14 @@ paths:
               description: The category of the book
         ```
       responses:
-        "200":
+        '200':
           description: A list of books
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: "#/components/schemas/CategorizedBook"
+                  $ref: '#/components/schemas/CategorizedBook'
 
   /allof-nested:
     get:
@@ -343,7 +343,7 @@ paths:
                 type: string
         ```
       responses:
-        "200":
+        '200':
           description: Successful response
           content:
             application/json:
@@ -392,7 +392,7 @@ paths:
         required: [pet]
         ```
       responses:
-        "200":
+        '200':
           description: Successful response
           content:
             application/json:
@@ -439,11 +439,11 @@ components:
         title:
           type: string
           description: The title of the book
-          example: "The Great Gatsby"
+          example: 'The Great Gatsby'
         author:
           type: string
           description: The author of the book
-          example: "F. Scott Fitzgerald"
+          example: 'F. Scott Fitzgerald'
 
     AdditionalBookInfo:
       type: object
@@ -452,29 +452,29 @@ components:
           type: string
           format: date
           description: The date the book was published
-          example: "2021-01-01"
+          example: '2021-01-01'
         genre:
           type: string
           description: The genre of the book
-          example: "Fiction"
+          example: 'Fiction'
         tags:
           type: array
           items:
             type: string
           description: Tags associated with the book
-          example: ["Fiction", "Mystery"]
+          example: ['Fiction', 'Mystery']
 
     Book:
       allOf:
-        - $ref: "#/components/schemas/BookBase"
-        - $ref: "#/components/schemas/AdditionalBookInfo"
+        - $ref: '#/components/schemas/BookBase'
+        - $ref: '#/components/schemas/AdditionalBookInfo'
 
     CategorizedBook:
       allOf:
-        - $ref: "#/components/schemas/BookBase"
-        - $ref: "#/components/schemas/AdditionalBookInfo"
+        - $ref: '#/components/schemas/BookBase'
+        - $ref: '#/components/schemas/AdditionalBookInfo'
       properties:
         category:
           type: string
           description: The category of the book
-          example: "Fiction"
+          example: 'Fiction'

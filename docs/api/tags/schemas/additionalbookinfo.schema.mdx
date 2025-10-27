@@ -1,33 +1,52 @@
 ---
 id: additionalbookinfo
-title: "AdditionalBookInfo"
-description: ""
-sidebar_label: "AdditionalBookInfo"
+title: 'AdditionalBookInfo'
+description: ''
+sidebar_label: 'AdditionalBookInfo'
 hide_title: true
 hide_table_of_contents: true
 schema: true
-sample: {"publishedDate":"2021-01-01","genre":"Fiction","tags":["Fiction","Mystery"]}
+sample:
+  {
+    'publishedDate': '2021-01-01',
+    'genre': 'Fiction',
+    'tags': ['Fiction', 'Mystery'],
+  }
 custom_edit_url: null
 ---
 
-import Schema from "@theme/Schema";
-import Heading from "@theme/Heading";
+import Schema from '@theme/Schema';
+import Heading from '@theme/Heading';
 
 <Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"AdditionalBookInfo"}
->
-</Heading>
-
-
-
-
+  as={'h1'}
+  className={'openapi__heading'}
+  children={'AdditionalBookInfo'}
+></Heading>
 
 <Schema
-  schema={{"type":"object","properties":{"publishedDate":{"type":"string","format":"date","description":"The date the book was published","example":"2021-01-01"},"genre":{"type":"string","description":"The genre of the book","example":"Fiction"},"tags":{"type":"array","items":{"type":"string"},"description":"Tags associated with the book","example":["Fiction","Mystery"]}},"title":"AdditionalBookInfo"}}
-  schemaType={"response"}
->
-  
-</Schema>
-            
+  schema={{
+    type: 'object',
+    properties: {
+      publishedDate: {
+        type: 'string',
+        format: 'date',
+        description: 'The date the book was published',
+        example: '2021-01-01',
+      },
+      genre: {
+        type: 'string',
+        description: 'The genre of the book',
+        example: 'Fiction',
+      },
+      tags: {
+        type: 'array',
+        items: { type: 'string' },
+        description: 'Tags associated with the book',
+        example: ['Fiction', 'Mystery'],
+      },
+    },
+    title: 'AdditionalBookInfo',
+  }}
+  schemaType={'response'}
+></Schema>

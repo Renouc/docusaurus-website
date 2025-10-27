@@ -1,43 +1,39 @@
 ---
 id: all-of-with-deep-merging
-title: "allOf 与深层合并"
-description: "模式："
-sidebar_label: "allOf 与深层合并"
+title: 'allOf 与深层合并'
+description: '模式：'
+sidebar_label: 'allOf 与深层合并'
 hide_title: true
 hide_table_of_contents: true
 api: eJztVE1v2zAM/SsCz8pHc9StQIdhh2EF9nFJDERWmFidLGSimnK2wPB/HyStTRp0vQzDLvPFBkW+Rj08eIesDgVqDdu7DHhoJOySTbMx2eFDw0XTYa7Xx2+32pHu38SVRbbwQM5FPEZUI7QOazBEhYgoRU7ZIqgaE2CHG+xTiU0C8UPebWn6sN5jY4OZZ+BGFcrL+8C/6Wb1Yjx/6FlMRbONBQkKKwRMSqBFWyyW/rjQejEGi/eDEYzJIMMFn9JnTdYzOGs3piwfimhGoDKaclsmp9QjcACio9wAJ5wtU0npv/n4986z4RW7VGSZ+5F/gWl3kVg0rV1MZocfchR0oOGBB0bkDBQvtXNjPmG/WYzpwixKs34cCZ7NjvFuWSHzRyRYRSdzev4Nrq99hHzzlpDOSOOpkw0CiiCuq2MKEvrW+QsxBwhET1dqb+XK+hElCDJR7XSbkdc/cFeG7zZ24Q4zi/VOXz+jH88D/L90fL90vH2X8kRfRaet5NkNyrHN1TvnjXTunkdAFynw6jq0m/JzcNHH424DpBGrdSGBr6JZ9tW4mCR3qHaayf1/xxGYzBiNb9KjdUBxwvb5Tc2Hnt28+wTT9BEq7zpk=
-sidebar_class_name: "get api-method"
+sidebar_class_name: 'get api-method'
 info_path: docs/api/tags/allof-variations-api
 custom_edit_url: null
 hide_send_button: true
 ---
 
-import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
-import ParamsDetails from "@theme/ParamsDetails";
-import RequestSchema from "@theme/RequestSchema";
-import StatusCodes from "@theme/StatusCodes";
-import OperationTabs from "@theme/OperationTabs";
-import TabItem from "@theme/TabItem";
-import Heading from "@theme/Heading";
+import MethodEndpoint from '@theme/ApiExplorer/MethodEndpoint';
+import ParamsDetails from '@theme/ParamsDetails';
+import RequestSchema from '@theme/RequestSchema';
+import StatusCodes from '@theme/StatusCodes';
+import OperationTabs from '@theme/OperationTabs';
+import TabItem from '@theme/TabItem';
+import Heading from '@theme/Heading';
 
 <Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"allOf 与深层合并"}
->
-</Heading>
+  as={'h1'}
+  className={'openapi__heading'}
+  children={'allOf 与深层合并'}
+></Heading>
 
 <MethodEndpoint
-  method={"get"}
-  path={"/allof-deep-merging"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+  method={'get'}
+  path={'/allof-deep-merging'}
+  context={'endpoint'}
+></MethodEndpoint>
 
 模式：
+
 ```yaml
 allOf:
   - type: object
@@ -56,27 +52,42 @@ allOf:
             type: number
 ```
 
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
-
-<RequestSchema
-  title={"正文"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema title={'正文'} body={undefined}></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"成功响应","content":{"application/json":{"schema":{"allOf":[{"type":"object","properties":{"deepProp":{"type":"object","properties":{"innerProp1":{"type":"string"}}}}},{"type":"object","properties":{"deepProp":{"type":"object","properties":{"innerProp2":{"type":"number"}}}}}]}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    '200': {
+      description: '成功响应',
+      content: {
+        'application/json': {
+          schema: {
+            allOf: [
+              {
+                type: 'object',
+                properties: {
+                  deepProp: {
+                    type: 'object',
+                    properties: { innerProp1: { type: 'string' } },
+                  },
+                },
+              },
+              {
+                type: 'object',
+                properties: {
+                  deepProp: {
+                    type: 'object',
+                    properties: { innerProp2: { type: 'number' } },
+                  },
+                },
+              },
+            ],
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

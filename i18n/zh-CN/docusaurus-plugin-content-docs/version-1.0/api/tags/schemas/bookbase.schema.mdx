@@ -1,32 +1,52 @@
 ---
 id: bookbase
-title: "BookBase"
-description: ""
-sidebar_label: "BookBase"
+title: 'BookBase'
+description: ''
+sidebar_label: 'BookBase'
 hide_title: true
 hide_table_of_contents: true
 schema: true
-sample: {"id":1234567890,"title":"了不起的盖茨比","author":"F. Scott Fitzgerald"}
+sample:
+  {
+    'id': 1234567890,
+    'title': '了不起的盖茨比',
+    'author': 'F. Scott Fitzgerald',
+  }
 custom_edit_url: null
 ---
 
-import Schema from "@theme/Schema";
-import Heading from "@theme/Heading";
+import Schema from '@theme/Schema';
+import Heading from '@theme/Heading';
 
 <Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"BookBase"}
->
-</Heading>
-
-
-
+  as={'h1'}
+  className={'openapi__heading'}
+  children={'BookBase'}
+></Heading>
 
 <Schema
-  schema={{"type":"object","required":["id","title","author"],"properties":{"id":{"type":"integer","format":"int64","description":"书籍的唯一标识符","example":1234567890},"title":{"type":"string","description":"书籍的标题","example":"了不起的盖茨比"},"author":{"type":"string","description":"书籍的作者","example":"F. Scott Fitzgerald"}},"title":"BookBase"}}
-  schemaType={"response"}
->
-  
-</Schema>
-            
+  schema={{
+    type: 'object',
+    required: ['id', 'title', 'author'],
+    properties: {
+      id: {
+        type: 'integer',
+        format: 'int64',
+        description: '书籍的唯一标识符',
+        example: 1234567890,
+      },
+      title: {
+        type: 'string',
+        description: '书籍的标题',
+        example: '了不起的盖茨比',
+      },
+      author: {
+        type: 'string',
+        description: '书籍的作者',
+        example: 'F. Scott Fitzgerald',
+      },
+    },
+    title: 'BookBase',
+  }}
+  schemaType={'response'}
+></Schema>

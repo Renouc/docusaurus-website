@@ -19,6 +19,7 @@ First, you need to register an account on the Shoplazza Developer Platform.
 ### 2. Create an App
 
 After logging in, click "Create New App" and fill in the basic information:
+
 - App name
 - App description
 - App icon

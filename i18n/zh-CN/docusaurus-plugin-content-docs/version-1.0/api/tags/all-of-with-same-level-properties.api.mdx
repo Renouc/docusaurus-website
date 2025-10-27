@@ -1,43 +1,39 @@
 ---
 id: all-of-with-same-level-properties
-title: "allOf 与同级属性"
-description: "模式："
-sidebar_label: "allOf 与同级属性"
+title: 'allOf 与同级属性'
+description: '模式：'
+sidebar_label: 'allOf 与同级属性'
 hide_title: true
 hide_table_of_contents: true
 api: eJzlVE2v0zAQ/CvWnt2P16NvTwIhJCQqPeDSVsrW3TZ+OLaxnUIV5b+jdUobQt8vIJco69nxeHacDjKeEqgNoLWfj7CTcKCkownZeAcKXnRNDaqtq6rqgo3dugJUWyfETORLICX8/pV05ooQIfpAMRtKaigIURrW0YenW0lcO1OOxp3+Aa7eBE7oA0Zyecw95b0jVg8RVVVtHUiIlIJ3iRKoDlbLJb8mTrRaU0rH1oo/YJCgvcvkMsMxBGs0Mnzxmring1TsK6vFX7XpgAWAgsE1kHA/0w1XTsRfV+ygFnp5X149WO773ZRu5NBDvpE/Dwn5kdBQrv0BFJyoKMZcg4IFWuuPs4QNzSydyc5Ge0sw7ugLp8mWSZ9ZuviG0RSPknhef4Rp3t5R413KETMlccZofJuGYIjBS6F9szduoJiDhDPFNPQ+zZfzZTmUT7nBMgCHDe89MPw0uRYvLPcTyxXrsdy/dHT3wf43V+A6+0y/8iJYNI6tbKMdYsQTL3+JNye+k1D7lBnWdXtM9DXavufyj5biBdRmJ4FHinvOw2bXS6gJDxTLtfhOFw6J1hQ4Y2e0bZnc9FZxxm95/PD+C/T9b54eoFY=
-sidebar_class_name: "get api-method"
+sidebar_class_name: 'get api-method'
 info_path: docs/api/tags/allof-variations-api
 custom_edit_url: null
 hide_send_button: true
 ---
 
-import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
-import ParamsDetails from "@theme/ParamsDetails";
-import RequestSchema from "@theme/RequestSchema";
-import StatusCodes from "@theme/StatusCodes";
-import OperationTabs from "@theme/OperationTabs";
-import TabItem from "@theme/TabItem";
-import Heading from "@theme/Heading";
+import MethodEndpoint from '@theme/ApiExplorer/MethodEndpoint';
+import ParamsDetails from '@theme/ParamsDetails';
+import RequestSchema from '@theme/RequestSchema';
+import StatusCodes from '@theme/StatusCodes';
+import OperationTabs from '@theme/OperationTabs';
+import TabItem from '@theme/TabItem';
+import Heading from '@theme/Heading';
 
 <Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"allOf 与同级属性"}
->
-</Heading>
+  as={'h1'}
+  className={'openapi__heading'}
+  children={'allOf 与同级属性'}
+></Heading>
 
 <MethodEndpoint
-  method={"get"}
-  path={"/allof-same-level-properties"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+  method={'get'}
+  path={'/allof-same-level-properties'}
+  context={'endpoint'}
+></MethodEndpoint>
 
 模式：
+
 ```yaml
 allOf:
   - type: object
@@ -53,27 +49,35 @@ properties:
     type: string
 ```
 
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
-
-<RequestSchema
-  title={"正文"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema title={'正文'} body={undefined}></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"成功响应","content":{"application/json":{"schema":{"allOf":[{"type":"object","properties":{"allOfProp1":{"type":"string"},"allOfProp2":{"type":"string"}}}],"properties":{"parentProp1":{"type":"string"},"parentProp2":{"type":"string"}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    '200': {
+      description: '成功响应',
+      content: {
+        'application/json': {
+          schema: {
+            allOf: [
+              {
+                type: 'object',
+                properties: {
+                  allOfProp1: { type: 'string' },
+                  allOfProp2: { type: 'string' },
+                },
+              },
+            ],
+            properties: {
+              parentProp1: { type: 'string' },
+              parentProp2: { type: 'string' },
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

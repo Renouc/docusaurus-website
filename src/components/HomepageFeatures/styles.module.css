@@ -7,8 +7,8 @@
 
 /* 亮色模式颜色 */
 :root {
-  --feature-apps-bg: #DCE8FF;
-  --feature-themes-bg: #F0D8FF;
+  --feature-apps-bg: #dce8ff;
+  --feature-themes-bg: #f0d8ff;
   --feature-apps-title: #1a3a7f;
   --feature-themes-title: #6a1a8f;
   --feature-card-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
@@ -20,7 +20,6 @@
   --feature-btn-hover-bg: #efefef;
   --feature-btn-hover-border: #d0d0d0;
 }
-
 
 html[data-theme='dark'] {
   --feature-apps-bg: #1e3a52;

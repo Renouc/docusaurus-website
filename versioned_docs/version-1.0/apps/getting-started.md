@@ -13,6 +13,7 @@ An app is a custom tool that extends Shoplazza's functionality and can be integr
 ## Before You Begin
 
 Before starting app development, you need:
+
 - A Shoplazza developer account
 - Basic Web development knowledge
 - Necessary development tools installed

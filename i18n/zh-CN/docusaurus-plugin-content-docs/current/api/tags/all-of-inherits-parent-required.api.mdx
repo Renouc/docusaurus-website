@@ -1,45 +1,41 @@
 ---
 id: all-of-inherits-parent-required
-title: "allOf 继承父级必需属性"
+title: 'allOf 继承父级必需属性'
 description: "父对象将 'pet' 属性标记为必需，其模式通过 allOf 组合。"
-sidebar_label: "allOf 继承父级必需属性"
+sidebar_label: 'allOf 继承父级必需属性'
 hide_title: true
 hide_table_of_contents: true
 api: eJztVE1v2zAM/SsEz8rHdtStwIZhpxXotktsIIrD2GplSRXlbIGh/z5IdpakKFBgh56miwSZ75F8evSIUbWMcoPKmG8HrAXuiZugfdTOosR7FchGcLtHaiL0KjwxxI6gQk+xQvDBeQrxBIoh0POgA+3hV6cNgY4M3HTUK9AMjeu9Y9rDUSsoyZaVrexDCZCV3W63J9WbysaTJzknrOzMr4llZQE8xbLDRDGfARZwC4N5vYCfl1U93VzAjOcYtG3/kVW1r5NqG6mlUNmzQBI2nmJdmq4sCgzE3lkmRjnix/U6b7fv8DA0DTEfBgPnYBTYOBvJxhyuvDe6UTl89cgZM+Kkfj7lQlDi1AgKvHSQv3qaKIoF5Oat8KzeFemkGaaUxFtI1V4DZ10ysk4pqzDJk+2YS6pTXgJ7ip3bo8SWCqWKHUpcKWPcYeGLQRd/sQK1PbiSRUeT09zltuCnCrqow3B3/xVf+vwT9c5yDCoSw1EF7QaePHb2cOP6nbYTxRIFHinwhP2wXC/XmAR6x7FX9qLRJClo21HI4zAVC1fF3lQxXh70/+C9y+DNToz0O668UdrmZxyCKVNRfFb+jK/4rBbYOY45YBx3iulHMCnl6+eBwgnlphaYjaR22YWbOgnsSO0plAl7olO2ZtOQz54+KjMUv7yc4lRf+f/L5++Y0h/wOuco
-sidebar_class_name: "get api-method"
+sidebar_class_name: 'get api-method'
 info_path: docs/api/tags/allof-variations-api
 custom_edit_url: null
 hide_send_button: true
 ---
 
-import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
-import ParamsDetails from "@theme/ParamsDetails";
-import RequestSchema from "@theme/RequestSchema";
-import StatusCodes from "@theme/StatusCodes";
-import OperationTabs from "@theme/OperationTabs";
-import TabItem from "@theme/TabItem";
-import Heading from "@theme/Heading";
+import MethodEndpoint from '@theme/ApiExplorer/MethodEndpoint';
+import ParamsDetails from '@theme/ParamsDetails';
+import RequestSchema from '@theme/RequestSchema';
+import StatusCodes from '@theme/StatusCodes';
+import OperationTabs from '@theme/OperationTabs';
+import TabItem from '@theme/TabItem';
+import Heading from '@theme/Heading';
 
 <Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"allOf 继承父级必需属性"}
->
-</Heading>
+  as={'h1'}
+  className={'openapi__heading'}
+  children={'allOf 继承父级必需属性'}
+></Heading>
 
 <MethodEndpoint
-  method={"get"}
-  path={"/allof-parent-required"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+  method={'get'}
+  path={'/allof-parent-required'}
+  context={'endpoint'}
+></MethodEndpoint>
 
 父对象将 "pet" 属性标记为必需，其模式通过 allOf 组合。
 
 模式：
+
 ```yaml
 type: object
 properties:
@@ -56,27 +52,32 @@ properties:
 required: [pet]
 ```
 
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
-
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema title={'Body'} body={undefined}></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Successful response","content":{"application/json":{"schema":{"type":"object","properties":{"pet":{"allOf":[{"type":"object","properties":{"name":{"type":"string"}}},{"type":"object","properties":{"age":{"type":"integer"}}}]}},"required":["pet"]}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    '200': {
+      description: 'Successful response',
+      content: {
+        'application/json': {
+          schema: {
+            type: 'object',
+            properties: {
+              pet: {
+                allOf: [
+                  { type: 'object', properties: { name: { type: 'string' } } },
+                  { type: 'object', properties: { age: { type: 'integer' } } },
+                ],
+              },
+            },
+            required: ['pet'],
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

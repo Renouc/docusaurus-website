@@ -1,13 +1,13 @@
-import type { ReactNode } from "react";
-import clsx from "clsx";
-import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
-import Heading from "@theme/Heading";
-import Translate, { translate } from "@docusaurus/Translate";
+import type { ReactNode } from 'react';
+import clsx from 'clsx';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Layout from '@theme/Layout';
+import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import Heading from '@theme/Heading';
+import Translate, { translate } from '@docusaurus/Translate';
 
-import styles from "./index.module.css";
+import styles from './index.module.css';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -19,7 +19,7 @@ function HomepageHeader() {
             {siteConfig.title}
           </Translate>
         </Heading>
-        <p className={clsx("hero__subtitle", styles.subtitle)}>
+        <p className={clsx('hero__subtitle', styles.subtitle)}>
           <Translate
             id="home.subtitle"
             description="The subtitle of the home page"
@@ -51,16 +51,16 @@ export default function Home(): ReactNode {
     <Layout
       title={translate(
         {
-          id: "home.title",
-          description: "The title of the home page",
-          message: "Hello from {title}",
+          id: 'home.title',
+          description: 'The title of the home page',
+          message: 'Hello from {title}',
         },
         { title: siteConfig.title }
       )}
       description={translate({
-        id: "home.description",
-        description: "The description of the home page",
-        message: "Description will go into a meta tag in <head />",
+        id: 'home.description',
+        description: 'The description of the home page',
+        message: 'Description will go into a meta tag in <head />',
       })}
     >
       <HomepageHeader />

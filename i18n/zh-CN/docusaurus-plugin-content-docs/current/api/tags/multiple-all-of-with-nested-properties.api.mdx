@@ -1,43 +1,39 @@
 ---
 id: multiple-all-of-with-nested-properties
-title: "多个 allOf 与嵌套属性"
-description: "模式："
-sidebar_label: "多个 allOf 与嵌套属性"
+title: '多个 allOf 与嵌套属性'
+description: '模式：'
+sidebar_label: '多个 allOf 与嵌套属性'
 hide_title: true
 hide_table_of_contents: true
 api: eJztU02P0zAQ/SvWnN2P7dG3lUCIA0slPi5ppDrptPHi2MaeFKoo/x2NU0jVLQgWjvgSZfxm5vnNmx5IHxKoArS1b/dQSthhqqMJZLwDBe/qBlutNm673Z50azcuA9XGCTETdAqohK8esSaOCBGiDxjJYFJjQAjfEcZ19OHuR0jcyPxJNh/j3NMKU5VE0bjDcxit/prR6iYj17UVxizaxoGEiCl4lzCB6mG1XPLnSueurjGlfWfFdzBIqL0jdMRwHYI1tWb44jFxTg8pDyff5umpogcmAArGd4CE6QGMm2bBf7/GTqpfYEetYeAjf7vb6g+6XWJHHcdu5dgTWqTG70DBAXMVTQ0oWLSdJRMszrS1fj9zmAh3IMG4vc8VDVkuec9KiY86mqxlEvfr13Dt+hfYepcoasIkjjoa3yWRNRaj5qL2bWXcWGIOEo4Y05h7N1/OlzBICD5Rq/OgnG6595szx3OpL4Ya8ZCJivUkxhWZfnLB/238J9t4NhfhV1oEq43jaXXRstajnQq4badSQuMTMaDvK53wQ7TDwOHPHcYTqKKUwH7RFZutKAcJDeodxrybn/DEDqxrDGzdo7YdE3my2kN5YfNXL9/DMHwDFlrbrQ==
-sidebar_class_name: "get api-method"
+sidebar_class_name: 'get api-method'
 info_path: docs/api/tags/allof-variations-api
 custom_edit_url: null
 hide_send_button: true
 ---
 
-import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
-import ParamsDetails from "@theme/ParamsDetails";
-import RequestSchema from "@theme/RequestSchema";
-import StatusCodes from "@theme/StatusCodes";
-import OperationTabs from "@theme/OperationTabs";
-import TabItem from "@theme/TabItem";
-import Heading from "@theme/Heading";
+import MethodEndpoint from '@theme/ApiExplorer/MethodEndpoint';
+import ParamsDetails from '@theme/ParamsDetails';
+import RequestSchema from '@theme/RequestSchema';
+import StatusCodes from '@theme/StatusCodes';
+import OperationTabs from '@theme/OperationTabs';
+import TabItem from '@theme/TabItem';
+import Heading from '@theme/Heading';
 
 <Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"多个 allOf 与嵌套属性"}
->
-</Heading>
+  as={'h1'}
+  className={'openapi__heading'}
+  children={'多个 allOf 与嵌套属性'}
+></Heading>
 
 <MethodEndpoint
-  method={"get"}
-  path={"/multiple-allof-nested"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+  method={'get'}
+  path={'/multiple-allof-nested'}
+  context={'endpoint'}
+></MethodEndpoint>
 
 Schema:
+
 ```yaml
 allOf:
   - type: object
@@ -56,27 +52,42 @@ allOf:
             type: number
 ```
 
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
-
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema title={'Body'} body={undefined}></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Successful response","content":{"application/json":{"schema":{"allOf":[{"type":"object","properties":{"outerProp1":{"type":"object","properties":{"innerProp1":{"type":"string"}}}}},{"type":"object","properties":{"outerProp2":{"type":"object","properties":{"innerProp2":{"type":"number"}}}}}]}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    '200': {
+      description: 'Successful response',
+      content: {
+        'application/json': {
+          schema: {
+            allOf: [
+              {
+                type: 'object',
+                properties: {
+                  outerProp1: {
+                    type: 'object',
+                    properties: { innerProp1: { type: 'string' } },
+                  },
+                },
+              },
+              {
+                type: 'object',
+                properties: {
+                  outerProp2: {
+                    type: 'object',
+                    properties: { innerProp2: { type: 'number' } },
+                  },
+                },
+              },
+            ],
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

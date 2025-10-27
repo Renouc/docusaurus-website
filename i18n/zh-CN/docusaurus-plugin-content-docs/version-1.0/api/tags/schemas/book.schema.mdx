@@ -1,32 +1,75 @@
 ---
 id: book
-title: "Book"
-description: ""
-sidebar_label: "Book"
+title: 'Book'
+description: ''
+sidebar_label: 'Book'
 hide_title: true
 hide_table_of_contents: true
 schema: true
-sample: {"id":1234567890,"title":"了不起的盖茨比","author":"F. Scott Fitzgerald","publishedDate":"2021-01-01","genre":"小说","tags":["小说","悬疑"]}
+sample:
+  {
+    'id': 1234567890,
+    'title': '了不起的盖茨比',
+    'author': 'F. Scott Fitzgerald',
+    'publishedDate': '2021-01-01',
+    'genre': '小说',
+    'tags': ['小说', '悬疑'],
+  }
 custom_edit_url: null
 ---
 
-import Schema from "@theme/Schema";
-import Heading from "@theme/Heading";
+import Schema from '@theme/Schema';
+import Heading from '@theme/Heading';
 
-<Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"Book"}
->
-</Heading>
-
-
-
+<Heading as={'h1'} className={'openapi__heading'} children={'Book'}></Heading>
 
 <Schema
-  schema={{"allOf":[{"type":"object","required":["id","title","author"],"properties":{"id":{"type":"integer","format":"int64","description":"书籍的唯一标识符","example":1234567890},"title":{"type":"string","description":"书籍的标题","example":"了不起的盖茨比"},"author":{"type":"string","description":"书籍的作者","example":"F. Scott Fitzgerald"}},"title":"BookBase"},{"type":"object","properties":{"publishedDate":{"type":"string","format":"date","description":"书籍发布日期","example":"2021-01-01"},"genre":{"type":"string","description":"书籍的类型","example":"小说"},"tags":{"type":"array","items":{"type":"string"},"description":"与书籍相关的标签","example":["小说","悬疑"]}},"title":"AdditionalBookInfo"}],"title":"Book"}}
-  schemaType={"response"}
->
-  
-</Schema>
-            
+  schema={{
+    allOf: [
+      {
+        type: 'object',
+        required: ['id', 'title', 'author'],
+        properties: {
+          id: {
+            type: 'integer',
+            format: 'int64',
+            description: '书籍的唯一标识符',
+            example: 1234567890,
+          },
+          title: {
+            type: 'string',
+            description: '书籍的标题',
+            example: '了不起的盖茨比',
+          },
+          author: {
+            type: 'string',
+            description: '书籍的作者',
+            example: 'F. Scott Fitzgerald',
+          },
+        },
+        title: 'BookBase',
+      },
+      {
+        type: 'object',
+        properties: {
+          publishedDate: {
+            type: 'string',
+            format: 'date',
+            description: '书籍发布日期',
+            example: '2021-01-01',
+          },
+          genre: { type: 'string', description: '书籍的类型', example: '小说' },
+          tags: {
+            type: 'array',
+            items: { type: 'string' },
+            description: '与书籍相关的标签',
+            example: ['小说', '悬疑'],
+          },
+        },
+        title: 'AdditionalBookInfo',
+      },
+    ],
+    title: 'Book',
+  }}
+  schemaType={'response'}
+></Schema>

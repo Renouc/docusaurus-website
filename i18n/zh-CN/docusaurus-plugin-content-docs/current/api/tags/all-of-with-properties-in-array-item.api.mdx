@@ -1,45 +1,41 @@
 ---
 id: all-of-with-properties-in-array-item
-title: "allOf 与数组项中的属性"
-description: "演示数组项中带有 allOf 的属性的书籍列表。"
-sidebar_label: "allOf 与数组项中的属性"
+title: 'allOf 与数组项中的属性'
+description: '演示数组项中带有 allOf 的属性的书籍列表。'
+sidebar_label: 'allOf 与数组项中的属性'
 hide_title: true
 hide_table_of_contents: true
 api: eJztV0tv2zgQ/ivEbIFc5Eey2eyubmm7DXJYbIG2e4kNhJbGEhuJVEg6rWvovxcztCTLcl3n0FsMA7boeX4z83G8AS8zB/EdyKL4bwnzCFJ0iVWVV0ZDDNeiUM4LsxQLYx6cSLE02nkrvdKZYCXxRflcVNZUaL1CJ5QW0lq5FspjOZ7pmf6Q5FjKeKbv7+/Xsixm2q8rjIPYTJOci2daiFcWl7E4+22SmLIyGrV3E8fKbvLamIczNtGZFG9auV3rJPpaOmSbwZVZfMbE07PFx5WymPKPQoyESptvXvkCmwe58rmx9NTlttVRjXJjXWmPGdrmcGlsKT0fX102hzvAxuKTVo8rFCpF7dVSoSUd4XNknIMKR7PnyHmrdHbQ5MccgwpVq28ppPI8U0Gnb2umr9NUkYwsCONbvTQHMR4gVq0WhXI5pm+lP55Tg10qPf4wOPqxjUt8ka5zEHQy1PaZ2LHKEDsakD1D27YNR13znupLZk5I50yipMc0jM8uxm+kx8xY9Q1TAplt86S1HfuzMaHePztFeFjOs4PlS0JI6+ch2mj1QeUBhggsuspohw7iDVxMp/RxlHwggsRoj9qTqKyqQiWSRCefHclvIKRF3yg+iIErBRFwkViLaS6+ayVCz3I4gRaIDFUKEfAsQQRhEIgaO1jIlEp3HG0JACII/RuOri5hn1CPDz5EgF9lWRUI8fnF75d/XP3519/Tugmm8xeQH1g/yAG7RlnixqL04kZ6t1hD3WZ4kvUhLfTMvxuLD4nxXrxT/luGVhYp1F380HQn1NGwBH18e5RxKLgWaWKDg8EeoYle1BfTi/PRlN4EBxPBaWgMOKMPhkpYlvLna/bHfdl3VQ98HeOMXZ93rdMI/l07j3YN890CDCce6kFrN4N7GgiHxvwwDjtx7JEc1PyKoESfmxRiyJBbQvocYpjIojDLEaU96kIdKT1iJEeEI8FJ6VDMTbK8n/wvrWKecOL6/e0ghbftSoNOPEmrzMptN5vAJyIx5ULpYGIMETyhdUH3fDwdT6lclXG+lExCWpZc4m43et/bja55N7oNEfdC2XT89rJ4vSxeL4vXy+L1KxavLaN7/OonVSEVX1ArW/Cly3zLfwd/yrfzCHLjPIlvNgvp8JMt6pqOH1d078R38wiIUOWCr6Z5HUGOMkXLC9gDronnkgQrYvonWayYN/f3Orqe2lvh5p+PUNffAY/Z+/A=
-sidebar_class_name: "get api-method"
+sidebar_class_name: 'get api-method'
 info_path: docs/api/tags/allof-variations-api
 custom_edit_url: null
 hide_send_button: true
 ---
 
-import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
-import ParamsDetails from "@theme/ParamsDetails";
-import RequestSchema from "@theme/RequestSchema";
-import StatusCodes from "@theme/StatusCodes";
-import OperationTabs from "@theme/OperationTabs";
-import TabItem from "@theme/TabItem";
-import Heading from "@theme/Heading";
+import MethodEndpoint from '@theme/ApiExplorer/MethodEndpoint';
+import ParamsDetails from '@theme/ParamsDetails';
+import RequestSchema from '@theme/RequestSchema';
+import StatusCodes from '@theme/StatusCodes';
+import OperationTabs from '@theme/OperationTabs';
+import TabItem from '@theme/TabItem';
+import Heading from '@theme/Heading';
 
 <Heading
-  as={"h1"}
-  className={"openapi__heading"}
-  children={"allOf 与数组项中的属性"}
->
-</Heading>
+  as={'h1'}
+  className={'openapi__heading'}
+  children={'allOf 与数组项中的属性'}
+></Heading>
 
 <MethodEndpoint
-  method={"get"}
-  path={"/allof-with-properties-in-array-item"}
-  context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+  method={'get'}
+  path={'/allof-with-properties-in-array-item'}
+  context={'endpoint'}
+></MethodEndpoint>
 
 A list of books demonstrating allOf with properties in array item.
 
 Schema:
+
 ```yaml
 type: array
 items:
@@ -47,6 +43,7 @@ items:
 ```
 
 Schema Components:
+
 ```yaml
 BookBase:
   type: object
@@ -92,27 +89,81 @@ CategorizedBook:
       description: The category of the book
 ```
 
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
-
-<RequestSchema
-  title={"Body"}
-  body={undefined}
->
-  
-</RequestSchema>
+<RequestSchema title={'Body'} body={undefined}></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"A list of books","content":{"application/json":{"schema":{"type":"array","items":{"allOf":[{"type":"object","required":["id","title","author"],"properties":{"id":{"type":"integer","format":"int64","description":"Unique identifier for the book","example":1234567890},"title":{"type":"string","description":"The title of the book","example":"The Great Gatsby"},"author":{"type":"string","description":"The author of the book","example":"F. Scott Fitzgerald"}},"title":"BookBase"},{"type":"object","properties":{"publishedDate":{"type":"string","format":"date","description":"The date the book was published","example":"2021-01-01"},"genre":{"type":"string","description":"The genre of the book","example":"Fiction"},"tags":{"type":"array","items":{"type":"string"},"description":"Tags associated with the book","example":["Fiction","Mystery"]}},"title":"AdditionalBookInfo"}],"properties":{"category":{"type":"string","description":"The category of the book","example":"Fiction"}},"title":"CategorizedBook"}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    '200': {
+      description: 'A list of books',
+      content: {
+        'application/json': {
+          schema: {
+            type: 'array',
+            items: {
+              allOf: [
+                {
+                  type: 'object',
+                  required: ['id', 'title', 'author'],
+                  properties: {
+                    id: {
+                      type: 'integer',
+                      format: 'int64',
+                      description: 'Unique identifier for the book',
+                      example: 1234567890,
+                    },
+                    title: {
+                      type: 'string',
+                      description: 'The title of the book',
+                      example: 'The Great Gatsby',
+                    },
+                    author: {
+                      type: 'string',
+                      description: 'The author of the book',
+                      example: 'F. Scott Fitzgerald',
+                    },
+                  },
+                  title: 'BookBase',
+                },
+                {
+                  type: 'object',
+                  properties: {
+                    publishedDate: {
+                      type: 'string',
+                      format: 'date',
+                      description: 'The date the book was published',
+                      example: '2021-01-01',
+                    },
+                    genre: {
+                      type: 'string',
+                      description: 'The genre of the book',
+                      example: 'Fiction',
+                    },
+                    tags: {
+                      type: 'array',
+                      items: { type: 'string' },
+                      description: 'Tags associated with the book',
+                      example: ['Fiction', 'Mystery'],
+                    },
+                  },
+                  title: 'AdditionalBookInfo',
+                },
+              ],
+              properties: {
+                category: {
+                  type: 'string',
+                  description: 'The category of the book',
+                  example: 'Fiction',
+                },
+              },
+              title: 'CategorizedBook',
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

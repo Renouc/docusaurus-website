@@ -30,8 +30,8 @@ All API requests require authentication using your API key:
 
 ```javascript
 const headers = {
-  'Authorization': `Bearer ${YOUR_API_KEY}`,
-  'Content-Type': 'application/json'
+  Authorization: `Bearer ${YOUR_API_KEY}`,
+  'Content-Type': 'application/json',
 };
 ```
 
@@ -40,10 +40,10 @@ const headers = {
 ```javascript
 fetch('https://api.shoplazza.com/v1/resource', {
   method: 'GET',
-  headers: headers
+  headers: headers,
 })
-.then(response => response.json())
-.then(data => console.log(data));
+  .then((response) => response.json())
+  .then((data) => console.log(data));
 ```
 
 ## Building the Frontend
